@@ -1,0 +1,124 @@
+nav{
+    position: relative;
+
+    .NavLink {
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:visited,
+        &:active {
+            text-decoration: none;
+        }
+    }
+
+    .NavLink p {
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+    }
+
+    .backgroundImage{
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentationText{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-top: 10%;
+        position: relative;
+        cursor: default;
+        & > * {
+            transition: opacity 0.3s ease;
+        }
+
+        p{
+            width: 300px;
+            font-size: 24px;
+            text-align: center;
+            color:black;
+            opacity: 0.3;
+        }
+
+        &:hover p {
+            opacity: 1;
+        }
+    }
+
+    .bookContainer{
+        position: absolute;
+        top: 0%;
+        height: 100px;
+    }
+
+    
+    .rhombus{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        .books{
+            display: flex;
+            flex-direction: column;
+            margin-right: 10%;
+            color: white;
+
+            .collection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                & > * {
+                    transition: opacity 0.3s ease;
+                }
+                p{
+                    margin: 0px;
+                    position: absolute;
+                    font-size: 28px;
+                    opacity: 0.1;
+                    color:white;
+                }
+
+                &:hover p {
+                    opacity: 1;
+                }
+            }
+
+            .contact{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                & > * {
+                    transition: opacity 0.3s ease;
+                }
+                p{
+                    position:absolute;
+                    top: 40px;
+                    right: 40px;
+                    font-size: 22px;
+                    opacity: 0.1;
+                    color:white;
+                }
+
+                &:hover p {
+                    opacity: 1;
+                }
+
+                .book2{
+                    margin-left: 50%;
+                    margin-top: -15%;
+                }
+            }
+
+        }
+    }
+
+}
