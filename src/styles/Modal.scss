@@ -1,0 +1,89 @@
+@import './color.scss';
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); // Darkened backdrop
+    z-index: -1;  // Hide behind other content by default
+    opacity: 0;   // Default to transparent
+    transition: opacity 0.3s ease-in-out;
+
+    .modal-content {
+        position: relative;
+        background-color: $main-background;
+        color: $main-text;
+        font-size: 24px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+
+        .textAchat{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 300px;
+            max-width: 600px;
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-left: 10px;
+                margin: 0px;
+            }
+
+            .btnAchat {
+                position: absolute;
+                bottom: 20px;
+                right: 17%;
+                font: inherit;
+                cursor: pointer;
+                background: linear-gradient(to bottom, #cccccc, #888888);
+                border: none;
+                color: black;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: filter 0.3s ease;
+            }
+            
+            .btnAchat:hover {
+                filter: brightness(80%);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            
+        }
+
+        .btnClose {
+            position: absolute;
+            top: -370px;
+            left: 20px;
+            width: 20px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 350px;
+            object-fit: cover;
+        }
+
+
+    }
+}
+
+.modal.visible {
+    z-index: 10;  // Bring to the front
+    opacity: 1;   // Fully visible
+}

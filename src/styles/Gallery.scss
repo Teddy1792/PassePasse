@@ -1,3 +1,5 @@
+@import 'color';
+
 nav{
     position: relative;
 
@@ -63,26 +65,33 @@ nav{
         flex-direction: row;
         justify-content: space-between;
         width: 100vw;
+
         .books{
             display: flex;
             flex-direction: column;
-            margin-right: 10%;
-            color: white;
+            color: $main-text;
 
             .collection{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                position: absolute;
+                right: 20%;
+
                 & > * {
                     transition: opacity 0.3s ease;
                 }
+
+                .book1{
+                }
+
                 p{
                     margin: 0px;
                     position: absolute;
                     font-size: 28px;
                     opacity: 0.1;
-                    color:white;
+                    color:$main-text;
                 }
 
                 &:hover p {
@@ -95,26 +104,46 @@ nav{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                position: relative;
+                position: absolute;
+                top: 15vw;
+                right: 12vw;
+
                 & > * {
                     transition: opacity 0.3s ease;
                 }
                 p{
-                    position:absolute;
-                    top: 40px;
-                    right: 40px;
+                    position: absolute;
                     font-size: 22px;
                     opacity: 0.1;
-                    color:white;
+                    color:$main-text;
                 }
 
                 &:hover p {
                     opacity: 1;
                 }
+            }
 
-                .book2{
-                    margin-left: 50%;
-                    margin-top: -15%;
+            .auteurices{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 28vw;
+                right: 5vw;
+
+                & > * {
+                    transition: opacity 0.3s ease;
+                }
+                p{
+                    position:absolute;
+                    font-size: 22px;
+                    opacity: 0.1;
+                    color:$main-text;
+                }
+
+                &:hover p {
+                    opacity: 1;
                 }
             }
 

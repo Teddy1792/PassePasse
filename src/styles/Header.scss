@@ -15,14 +15,6 @@ header{
         position: relative;
         transition: transform 0.3s ease;
 
-        /*.rhombus{
-            background-color: black;
-            position: absolute;
-            width: 75px;
-            height: 75px;
-            transform: rotate(45deg);
-        }*/
-    
         img{
             width: 20%;
             min-width: 200px;
@@ -34,14 +26,14 @@ header{
     .nav-link{
         text-decoration: none;
         z-index: 1;
+    }
 
-        &.active .accueil {
-            text-decoration: underline;
-        }
+    .active .accueil {
+        text-decoration: underline;
+    }
 
-        &.active .Apropos {
-            text-decoration: underline;
-        }
+    .active .aProposHeader {
+        text-decoration: underline;
     }
 
 

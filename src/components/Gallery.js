@@ -1,8 +1,9 @@
 import '../styles/Gallery.scss';
 import { NavLink } from 'react-router-dom'
-import { ReactComponent as Background } from '../img/background.svg';
+import { ReactComponent as Background } from '../img/backgroundGallery.svg';
 import { ReactComponent as Diamond23 } from '../img/diamond-2-3.svg';
 import { ReactComponent as DiamondBig } from '../img/diamond-big.svg';
+import { ReactComponent as Diamond2310 } from '../img/diamond-2-3-10.svg';
 
 
 export function Gallery () {
@@ -23,9 +24,13 @@ export function Gallery () {
                             <p>Collection</p>
                             <DiamondBig className='diamond book1' />
                         </NavLink>
-                        <NavLink className='contact NavLink'>
+                        <NavLink to='/contact' className='contact NavLink'>
                             <p>Contact</p>
-                            <Diamond23 className='diamond book2' />
+                            <Diamond2310 className='diamond book2' />
+                        </NavLink>
+                        <NavLink to='/auteurices' className='auteurices NavLink'>
+                            <p>Auteur.ices</p>
+                            <Diamond23 className='diamond book3' />
                         </NavLink>
                     </div>
                 </div>

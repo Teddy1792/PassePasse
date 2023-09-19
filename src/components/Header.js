@@ -5,7 +5,7 @@ import '../styles/Header.scss';
 export function Header () {
     return (
         <header>
-            <NavLink to={"/"} className='nav-link left'>
+            <NavLink to={"/"} className='nav-link'>
                 <div className='hover-element'>
                     <p className='accueil'>Accueil</p>
                 </div>
@@ -14,9 +14,9 @@ export function Header () {
                 <img src={logo} alt='logo PassePasse'/>
                 <div className='rhombus'></div>
             </div>
-            <NavLink className='nav-link'>
-                <div className='right hover-element'>
-                    <p className='aPropos'>A propos</p>
+            <NavLink to={"/Apropos"} className='nav-link'>
+                <div className='hover-element'>
+                    <p className='aProposHeader'>A propos</p>
                 </div>
             </NavLink>
         </header>
