@@ -18,7 +18,15 @@ export function Modal({ title, text, image, closeModal, fading, link }) {
                         </a>
                     }
                 </div>
-                
+                <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1Ns5XQChueRw8NYEjpl91nWN"
+  publishable-key="pk_test_51Nhs84ChueRw8NYEzkbx7VZMFlw3wX9x6d1x5jAedqMcJuthUEDkwsgGwdK3J73Sl8gsTV6ndBbeM2tW0yoJdHsy00uLPDhCP0"
+>
+</stripe-buy-button>
             </div>
         </div>
     );

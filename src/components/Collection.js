@@ -33,10 +33,10 @@ export function Collection() {
             <CollectionsBackground className='backgroundImage' alt="une boîte noire flottant dans les airs au dessus d'escalier" />
             <div className='booksCover'>
                 <div className='naissanceBox'>
-                <button onClick={() => handleButtonClick('Naissance', 'Récit de naissance', Naissance, 'https://example.com/naissance-link')}><p>Naissance</p></button>
+                <button onClick={() => handleButtonClick('Naissance', 'Récit de naissance', Naissance, 'https://buy.stripe.com/test_00g3fl9UfcdOeNW3cd')}><p>Naissance</p></button>
                 </div>
                 <div className='confessionBox'>
-                <button onClick={() => handleButtonClick("Confession d'un enfant du siècle", 'Text for Confession', TuNeTaderasGuere, 'https://example.com/confession-link')}><p>Confession d'un enfant du siècle</p></button>
+                <button onClick={() => handleButtonClick("Confession d'un enfant du siècle", 'Text for Confession', TuNeTaderasGuere, 'https://buy.stripe.com/test_bIYcPV2rN1zafS0eUU')}><p>Confession d'un enfant du siècle</p></button>
                 </div>
             </div>
             <Modal title={modalTitle} text={modalContent} image={modalImage} link={modalLink} closeModal={closeModal} fading={isFading} />

@@ -1,3 +1,5 @@
+@import 'color';
+
 .backgroundContactImage{
 
         position: fixed;
@@ -10,4 +12,34 @@
             max-height: 100vh;
             margin: 0 auto;
         }
+}
+
+.contactForm{
+    position: absolute;
+    top: 4vw;
+    left: 26vw;
+    font-size: 24px;
+    width: 600px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+    &:hover{
+        opacity: 1;
+    }
+
+    .btnEnvoie{
+        margin-top:20px;
+        font-family: 'avera';
+        color: $main-text;
+        background-color: $main-background;
+        font-size: 20px;
+        border: none;
+        opacity: 0.3;
+        transition: opacity 0.3s ease;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+
 }
