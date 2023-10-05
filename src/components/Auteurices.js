@@ -1,5 +1,4 @@
 import '../styles/Auteurices.scss';
-import { ReactComponent as Background } from '../img/backgroundAuteurices.svg';
 import React, { useState } from 'react';
 import { Modal } from './Modal';
 import margot from '../img/photos auteurices/Margot-Darvenne.jpg'
@@ -28,7 +27,7 @@ export function Auteurices () {
 
     return (
         <nav>
-            <Background className='backgroundImage' alt='a face engraved in a mountain, looking to the right' />
+            <div className='backgroundImgAuteurices'></div>
             <div className='auteurices'>
             <div className='margot auteurice'>
                 <button className='btnAuteurice' onClick={() => handleButtonClick('Margot Darvenne', 'Margot Darvenne pratique une écriture plurielle, dont le versant intime assume une forme poétique depuis plusieurs années. Elle s’intéresse à l’imaginaire et au pouvoir du récit, et souscrit à l’idée selon laquelle l’intime est politique et à ce titre, partageable. Certains de ses poèmes ont été publiés dans des anthologies poétiques, notamment aux Éditions de l’Aigrette (Ailleurs, Un Rêve, Vivant(e)s). Elle collabore aussi avec des artistes issus d’autres disciplines, comme dans la revue illustrée Corpsimples ou encore avec l’adaptation sonore et théâtrale d’un récit en prose par la Cie Sarah Konnor. Elle enseigne la philosophie à Paris. Naissance est son premier recueil.', margot)}><p>Margot Darvenne</p></button>

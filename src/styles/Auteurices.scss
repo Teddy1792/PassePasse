@@ -1,3 +1,10 @@
+.backgroundImgAuteurices{
+    background-image: url('../img/backgroundAuteurices.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 .btnAuteurice{
     background: none;
     color: inherit;
@@ -36,4 +43,25 @@
     position: absolute;
     right: 18%;
     top: 30vw;
+}
+
+@media only screen and (max-width: 1350px) {
+    .enfant{
+        top:20%;
+        left: 30%;
+    }
+
+    .margot{
+        top:25%;
+        left: 40%;
+    }
+
+    .manon{
+        top:30%;
+        left: 30%;
+    }
+
+    .btnAuteurice{
+        opacity: 1;
+    }
 }

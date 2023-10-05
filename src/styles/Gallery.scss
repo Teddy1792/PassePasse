@@ -3,6 +3,13 @@
 nav{
     position: relative;
 
+    .backgroundImgGallery{
+        background-image: url('../img/backgroundGallery.svg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
     .NavLink {
         text-decoration: none;
 
@@ -83,9 +90,6 @@ nav{
                     transition: opacity 0.3s ease;
                 }
 
-                .book1{
-                }
-
                 p{
                     margin: 0px;
                     position: absolute;
@@ -150,4 +154,49 @@ nav{
         }
     }
 
+}
+
+@media only screen and (max-width: 1100px) {
+    nav .rhombus .books .contact{
+        top: 1vw;
+        right: -3vw;
+    }
+
+    nav .rhombus .books .auteurices{
+        top: 36vw;
+        right: -2vw;
+    }
+
+    .rhombus a p {
+            opacity: 1;
+        }
+
+    p {
+        opacity: 1 !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    nav .rhombus .books .collection{
+        top: 93vw;
+        right: 45vw;
+    }
+
+    nav .rhombus .books .contact{
+        top: 114vw;
+        right: 11vw;
+    }
+
+    nav .rhombus .books .auteurices{
+        top: 83vw;
+        right: -7vw;
+    }
+
+    polygon{
+        fill: #2f3338 !important;
+    }
+
+    p {
+        opacity: 1 !important;
+    }
 }

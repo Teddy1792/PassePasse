@@ -43,7 +43,13 @@ header{
 
         p{
             color: white;
-            
+            white-space: nowrap;
         }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header .box img{
+        min-width: 100px !important;
     }
 }

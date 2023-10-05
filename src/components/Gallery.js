@@ -1,6 +1,5 @@
 import '../styles/Gallery.scss';
 import { NavLink } from 'react-router-dom'
-import { ReactComponent as Background } from '../img/backgroundGallery.svg';
 import { ReactComponent as Diamond23 } from '../img/diamond-2-3.svg';
 import { ReactComponent as DiamondBig } from '../img/diamond-big.svg';
 import { ReactComponent as Diamond2310 } from '../img/diamond-2-3-10.svg';
@@ -9,7 +8,7 @@ import { ReactComponent as Diamond2310 } from '../img/diamond-2-3-10.svg';
 export function Gallery () {
     return (
         <nav>
-            <Background className='backgroundImage' alt='a triangle-looking mountain' />
+            <div className='backgroundImgGallery'></div>
             <div className='bookContainer'>
                 <div className='rhombus'>
                     <NavLink className='presentationText NavLink'>

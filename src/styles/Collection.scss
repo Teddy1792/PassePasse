@@ -1,16 +1,16 @@
 @import 'color';
 
 nav {
-    .backgroundImage {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
+    .backgroundImgCollection{
+        background-image: url('../img/backgroundCollection.svg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
     }
 
     .booksCover{
         position: absolute;
-        top: 30%;
+        top: 0%;
         width: 100%;
         height: 100%;
 
@@ -33,9 +33,9 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            top: 29vw;
-            left:38vw;
+            position: fixed;
+            top: 450px;
+            left:35%;
 
             p{
                 color: black;
@@ -54,9 +54,9 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            top: 41vw;
-            left:44vw;
+            position: fixed;
+            top: 600px;
+            left:45%;
 
             p{
                 color: black;
@@ -71,5 +71,39 @@ nav {
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    nav .booksCover .naissanceBox{
+        left:25%;
+    }
+
+    nav .booksCover .confessionBox{
+        left:37%;
+    }
+}
+
+@media only screen and (max-height: 1080px) {
+    nav .booksCover .naissanceBox{
+        left:25%;
+        top: 30%;
+    }
+
+    nav .booksCover .confessionBox{
+        left:45%;
+        top: 35%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav .booksCover .naissanceBox{
+        left:30%;
+        top: 25%;
+    }
+
+    nav .booksCover .confessionBox{
+        right:20%;
+        top: 40%;
     }
 }
