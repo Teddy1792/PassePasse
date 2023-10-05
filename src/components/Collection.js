@@ -35,10 +35,12 @@ export function Collection() {
                 <button onClick={() => handleButtonClick('Naissance', 'Récit de naissance', Naissance, 'https://buy.stripe.com/test_00g3fl9UfcdOeNW3cd')}><p>Naissance</p></button>
                 </div>
                 <div className='confessionBox'>
-                <button onClick={() => handleButtonClick("Confession d'un enfant du siècle", 'Text for Confession', TuNeTaderasGuere, 'https://buy.stripe.com/test_bIYcPV2rN1zafS0eUU')}><p>Confession d'un enfant du siècle</p></button>
+                <button onClick={() => handleButtonClick("Tu ne tarderas guère", 'Text for Confession', TuNeTaderasGuere, 'https://buy.stripe.com/test_bIYcPV2rN1zafS0eUU')}><p>Tu ne tarderas guère</p></button>
                 </div>
             </div>
             <Modal title={modalTitle} text={modalContent} image={modalImage} link={modalLink} closeModal={closeModal} fading={isFading} />
         </nav>
     );
 }
+
+//Livres = formerly Collection, hence the divergence between the component name Collection and the route name!

@@ -19,8 +19,8 @@ export function Gallery () {
                                 d’une conscience figés dans l’encre et le papier.</p>
                     </NavLink>
                     <div className='books'>
-                        <NavLink to='/collection' className='collection NavLink'>
-                            <p>Collection</p>
+                        <NavLink to='/Livres' className='collection NavLink'>
+                            <p>Livres</p>
                             <DiamondBig className='diamond book1' />
                         </NavLink>
                         <NavLink to='/contact' className='contact NavLink'>
@@ -38,3 +38,5 @@ export function Gallery () {
         </nav>
     )
 }
+
+//Livres = formerly Collection, hence the divergence between the component name Collection and the route name!

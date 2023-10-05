@@ -11,9 +11,11 @@ export const CustomRouter = () => {
     <Routes>
       <Route path="/" element={<Gallery />} />
       <Route path="/Apropos" element={<Apropos />} />
-      <Route path="/collection" element={<Collection />} />
+      <Route path="/Livres" element={<Collection />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/auteurices" element={<Auteurices />} />
     </Routes>
   );
 }
+
+//Livres = formerly Collection, hence the divergence between the component name Collection and the route name!
