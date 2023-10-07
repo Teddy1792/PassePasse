@@ -42,6 +42,11 @@
 
 @media only screen and (max-width: 800px) {
     .aProposMain{
+        top: 200px;
         opacity: 1;
+    }
+
+    .backdrop{
+        height:100%;
     }
 }

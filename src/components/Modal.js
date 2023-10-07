@@ -18,7 +18,7 @@ export function Modal({ title, text, image, closeModal, fading, link }) {
                         </a>
                     }
                 </div>
-                <script async
+<script async
   src="https://js.stripe.com/v3/buy-button.js">
 </script>
 

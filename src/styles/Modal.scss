@@ -90,6 +90,10 @@
 
 @media only screen and (max-width: 1000px) {
 
+    .app{
+        height: 1200px;
+    }
+
     .modal .modal-content .textAchat .btnAchat {
         position: absolute;
         bottom: 20px;
@@ -129,6 +133,7 @@
             min-width: 250px;
             max-width: 600px;
             margin-bottom: 40px;
+            height:100%;
 
             .text{
                 display: flex;
@@ -137,6 +142,12 @@
                 align-items: center;
                 padding-left: 10px;
                 margin: 0px;
+
+                p{
+                    height: auto;
+                    max-height: 300px;
+                    overflow-y: auto;
+                }
             }
 
             .btnAchat {
