@@ -45,20 +45,25 @@
     top: 30vw;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1350px) {  
+    nav .presentationText p{
+        background-color: rgba(228,228,228,0.8);
+        border-radius: 10px;
+    }
+
     .enfant{
-        top:20%;
+        top:10%;
         left: 30%;
     }
 
     .margot{
         top:25%;
-        left: 40%;
+        left: 30%;
     }
 
     .manon{
-        top:30%;
-        left: 30%;
+        top:40%;
+        left: 5%;
     }
 
     .btnAuteurice{
