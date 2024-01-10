@@ -9,8 +9,8 @@ export function Modal({ title, text, image, closeModal, fading, link }) {
                 <img src={image} alt={title} />
                 <div className='textAchat'>
                     <div className='text'>
-                        <h1>{title}</h1>
-                        <p>{text}</p>
+                        <h1 className='titleBook'>{title}</h1>
+                        <p className='textBook'>{text}</p>
                     </div>
                     {link && 
                         <a href={link} target="_blank" rel="noopener noreferrer">

@@ -37,6 +37,14 @@
                 align-items: center;
                 padding-left: 10px;
                 margin: 0px;
+
+                .titleBook{
+                    margin-bottom: 0px;
+                }
+
+                .textBook{
+                    margin-top: 0px;
+                }
             }
 
             .btnAchat {
@@ -105,7 +113,7 @@
     position: fixed;
     top: 80px;
     left: 0;
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +123,8 @@
     transition: opacity 0.3s ease-in-out;
 
     .modal-content {
-        position: relative;
+        position: fixed;
+        top: 0px;
         background-color: $main-background;
         color: $main-text;
         font-size: 24px;
@@ -124,6 +133,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow-y: auto;
 
         .textAchat{
             display: flex;
@@ -142,10 +152,11 @@
                 align-items: center;
                 padding-left: 10px;
                 margin: 0px;
+                overflow-y: auto;
 
                 p{
                     height: auto;
-                    max-height: 300px;
+                    max-height: 200px;
                     overflow-y: auto;
                 }
             }
@@ -166,7 +177,7 @@
                 border-radius: 4px;
                 transition: filter 0.3s ease;
                 position: absolute;
-                bottom: 20px;
+                bottom: 30px;
                 left: 50%;
                 transform: translateX(-50%);
             }
