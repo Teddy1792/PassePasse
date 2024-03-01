@@ -7,7 +7,7 @@ export function Contact() {
             <div className='backgroundImgContact'></div>
             <div className='contactForm'>
                 <h1>Contact</h1>
-                <p>La maison n'accepte pas de manuscrits à l'heure actuelle. Pour toute autre demande, merci de nous contacter à l'adresse suivante :</p>
+                <p>Vous pouvez envoyer vos manuscrits à l'adresse editionspassepasse@protonmail.com. Pour toute autre demande, merci de nous contacter en utilisant le formulaire suivant :</p>
                 <ContactForm />
             </div>
         </nav>
