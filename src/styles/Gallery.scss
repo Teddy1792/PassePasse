@@ -157,6 +157,10 @@ nav{
 }
 
 @media only screen and (max-width: 1100px) {
+    body{
+        width: 107vw;
+    }
+    
     nav .rhombus .books .contact{
         top: 1vw;
         right: -3vw;
@@ -177,6 +181,10 @@ nav{
 }
 
 @media only screen and (max-width: 750px) {
+    body{
+        width: 107vw;
+    }
+
     nav .rhombus .books .collection{
         top: 93vw;
         right: 45vw;
