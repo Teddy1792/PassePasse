@@ -28,7 +28,7 @@ export function Gallery () {
                             <Diamond2310 className='diamond book2' />
                         </NavLink>
                         <NavLink to='/auteurices' className='auteurices NavLink'>
-                            <p>Auteur.ices</p>
+                            <p>Auteurices</p>
                             <Diamond23 className='diamond book3' />
                         </NavLink>
                     </div>
