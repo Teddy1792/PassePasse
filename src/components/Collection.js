@@ -39,7 +39,7 @@ export function Collection() {
             <p key={index}>{line}</p>
         )),
         Naissance,
-        'https://buy.stripe.com/test_00g3fl9UfcdOeNW3cd'
+        'https://buy.stripe.com/00g3gb81N33e78AfZ1'
     )}>
         <p>Naissance</p>
     </button>
@@ -51,7 +51,7 @@ export function Collection() {
                             <p key={index}>{line}</p>
                         )),
                         TuNeTaderasGuere, 
-                        'https://buy.stripe.com/test_bIYcPV2rN1zafS0eUU'
+                        'https://buy.stripe.com/fZe1836XJ33e50s004'
                     )}><p>Tu ne tarderas guère</p></button>
                 </div>
             </div>
